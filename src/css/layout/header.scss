@@ -1,0 +1,46 @@
+header{
+    display: block;
+}
+
+header nav{
+    background: $main-color;
+    display: grid;
+    grid-template-columns: 120px 1fr auto auto;
+    grid-template-rows: 60px;
+    logo{
+        display: block;
+        height: 100%;
+        margin-left: 10px;
+        img{
+            height: 100%;
+        }
+    }
+    title{
+        margin: auto;
+        display: block;
+        font-size: 30px;
+    }
+
+    @media (max-width: 400px) {
+        title{
+            visibility: hidden;
+        }
+    }
+
+    search{
+        cursor: pointer;
+        margin: auto;
+        display: block;
+        img{
+            height: 32px;
+        }
+    }
+    hamburguer{
+        cursor: pointer;
+        margin: auto;
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}

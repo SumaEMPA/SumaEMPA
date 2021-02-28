@@ -1,0 +1,17 @@
+page{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: $bg-color;
+
+}
+
+main{
+    flex: 1;
+}
+
+main-content{
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+}

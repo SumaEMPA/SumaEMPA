@@ -1,0 +1,39 @@
+card:hover{
+    box-shadow: 3px 3px 10px 3px #bbb;
+}
+
+card{
+    box-shadow: 3px 3px 10px 3px #ddd;
+    border: 1px solid $gray-color;
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows: 192px 1fr;
+
+    image{
+        overflow:hidden;
+        img{
+            width: 100%;
+        }
+    }
+    content{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        h3{
+            color: $main-color;
+        }
+        p{
+            color: $gray2-color;
+        }
+        links{
+            display: flex;
+            a{
+                flex: 1;
+            }
+            a:not(:first-child) {
+                margin-left: 2px;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "suma-empa",
+  "version": "1.0.0",
+  "description": "Sistema Unificado de Material para Alumnos del EMPA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pipa Pips, Lucas Pandolfo",
+  "license": "ISC",
+  "dependencies": {
+    "fuse.js": "^6.4.6",
+    "mithril": "^2.0.4",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.8",
+    "yaml": "^1.10.0"
+  }
+}

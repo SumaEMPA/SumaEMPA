@@ -1,0 +1,26 @@
+download-item:hover{
+    box-shadow: 3px 3px 10px 3px #bbb;
+}
+
+download-item{
+    box-shadow: 3px 3px 10px 3px #ddd;
+    border: 1px solid $gray-color;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+
+    img{
+        cursor: pointer;
+        width: 48px;
+        margin:auto;
+    }
+    cuerpo{
+        h3{
+            color: $main-color;
+            cursor: pointer;
+        }
+        p{
+            color: $gray2-color;
+        }
+    }
+}

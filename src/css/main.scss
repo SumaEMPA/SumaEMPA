@@ -1,0 +1,51 @@
+@import "/../node_modules/normalize.css/normalize.css";
+@import "colors.scss";
+
+*{
+    box-sizing: border-box;
+    font-family: sans;
+}
+
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+body{
+    color: $fg-color;
+}
+
+@import "layout/header.scss";
+@import "layout/footer.scss";
+@import "layout/hero.scss";
+@import "layout/main.scss";
+
+@import "components/card.scss";
+@import "components/card-container.scss";
+
+@import "components/download-item.scss";
+@import "components/download-container.scss";
+
+
+.text-align-center{
+    text-align: center;
+}
+
+.btn{
+    display: block;
+    border-style: solid;
+    border-color: $main-color;
+    color: $main-color;
+    border-width : 1px 1px 1px 1px;
+    text-decoration : none;
+    padding : 4px;
+    text-align: center;
+}
+
+.main{
+    color: $main-color;
+}
+
+.search{
+    width: 100%;
+}
