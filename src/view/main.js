@@ -76,7 +76,8 @@ const cards = [
         content: "",
         links: [{
             url: "https://empaentelegram.github.io/",
-            name: "Click Aquí"
+            name: "Click Aquí",
+            newWindow: true
         }]
     }
 ]

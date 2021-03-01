@@ -1,5 +1,6 @@
 const m = require("mithril");
 
+
 const Card = {
     view(vnode){
         const attrs = vnode.attrs;
@@ -14,8 +15,7 @@ const Card = {
                    m("p", attrs.content),
                    links.length && content.length?m("hr"):null,
                    m("links",
-                     links.map(link => m("a.btn", {href: link.url, target: "_blank"}, link.name)))
-                  ))
+                     links.map(link => m("a.btn", {href: link.url, target: link.newWindow?"_blank":""}, link.name)))));
     }
 }
 
