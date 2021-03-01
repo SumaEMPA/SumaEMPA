@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: >-
-          npx parcel build src/index.html --no-source-maps && node
+          npm install && npx parcel build src/index.html --no-source-maps && node
           convertir-material.js
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
