@@ -10,11 +10,11 @@ const Search = {
     query: "",
     view(){
         return m(StandardPage,
-                 m("h1.text-align-center.main", "Búsqueda, supongo"),
+                 m("h1.text-align-center.main", "Búsqueda de material"),
                  m("input.search", {
                      type: "text",
                      oninput: ev => this.query = ev.target.value,
-                     placeholder: "Debería hacer esto mas lindo"
+                     placeholder: "Ingrese lo que desea buscar"
                  }),
                  m(DownloadContainer,
                    Material.buscar(this.query)

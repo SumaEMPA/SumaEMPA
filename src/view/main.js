@@ -86,7 +86,6 @@ const Main = {
     query: "",
     view(){
         return m(StandardPage, {hero: true},
-                 m("h1.text-align-center.main", "Título de la página, supongo"),
                  m(CardContainer,
                    cards.map(card => m(Card, card))));
 
