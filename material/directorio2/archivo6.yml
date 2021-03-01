@@ -1,0 +1,10 @@
+nombre: Ritmo 3
+descripcion: Otro ritmo para bailar en familia
+fecha: 2021-02-20
+nivel:
+  - todos
+instrumentos:
+  - todos
+tipo: audio
+icono: audio
+url: https://www.google.com/?q=audio
