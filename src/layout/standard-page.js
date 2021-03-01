@@ -9,8 +9,10 @@ const StandardPage = {
             vnode.attrs.hero?m("hero",
                                m("img", {src: require("/img/hero.jpg")}),
                                m("content",
-                                 m("h1", "SUMA EMPA"),
-                                 m("p", "Sistema Unificado de Material para Alumn@s de la EMPA"))):null,
+                                 m("h1", "Sistema Unificado"),
+                                 m("h1", "de Material para"),
+                                 m("h1", "Alumn@s de la EMPA")
+                                )):null,
             m("main",
               m("main-content",
                 vnode.children)),
