@@ -17,8 +17,17 @@ main-content{
     padding: 20px;
 }
 
-.animated {
+.fadein {
     animation:fade-in 0.5s;
+}
+
+.fadeout{
+    animation:fade-out 0.5s;
+}
+
+@keyframes fade-out {
+    from {opacity:1;}
+    to {opacity:0;}
 }
 
 @keyframes fade-in {
