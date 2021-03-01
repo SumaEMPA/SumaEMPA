@@ -22,7 +22,8 @@ const Search = {
                                m(DownloadItem, {
                                    title: item.nombre,
                                    description: item.descripcion,
-                                   url: item.url
+                                   url: item.url,
+                                   icon: item.icono
                                }))))
 
 
