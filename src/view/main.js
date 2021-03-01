@@ -14,7 +14,7 @@ const cards = [
         content: "",
         links: [{
             url: "/lm",
-            name: "LM"
+            name: "Lenguaje Musical"
         },
         {
             url: "/instrumentos",
@@ -67,7 +67,7 @@ const cards = [
         content: "",
         links:[{
             url: "/material",
-            name: "Click aquí"
+            name: "Click Aquí"
         }]
     },
     {
