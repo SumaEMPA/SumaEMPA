@@ -10,60 +10,75 @@ const DownloadContainer = require("/components/download-container.js");
 const cards = [
     {
         image: require("/img/cards/placeholder.jpg"),
-        title: "Tarjeta 1",
-        content: "Hola, esta es una descripcion de algo, no se, ni idea",
+        title: "Nivelación",
+        content: "",
         links: [{
-            url: "http://www.google.com",
-            name: "Cosa 1"
+            url: "/lm",
+            name: "LM"
         },
         {
-            url: "http://www.google.com",
-            name: "cosa2"
-        },
-        {
-            url: "http://www.google.com",
-            name: "cosa3"
-        }],
+            url: "/instrumentos",
+            name: "Instrumentos"
+        }]
 
     },
     {
         image: require("/img/cards/placeholder.jpg"),
-        title: "Tarjeta 2",
-        content: "Hola, esta es una descripcion de algo, no se, ni idea",
+        title: "Formación básica",
+        content: "",
         links: [{
-            url: "http://www.google.com",
-            name: "Google"
-        },
-        {
-            url: "http://www.google.com",
-            name: "Google2 (?"
+            url: "/foba",
+            name: "FOBA"
         }]
     },
     {
         image: require("/img/cards/placeholder.jpg"),
-        title: "Tarjeta 3",
-        content: "Hola, esta es una descripcion de algo, no se, ni idea",
+        title: "Carreras",
+        content: "",
         links: [{
-            url: "www.google.com",
-            name: "Nada"
+            url: "/pimp",
+            name: "PIMP"
+        },{
+            url: "/pem",
+            name: "PEM"
+        },{
+            url: "/imp",
+            name: "IMP"
         }]
     },
     {
         image: require("/img/cards/placeholder.jpg"),
-        title: "Tarjeta 4",
-        content: "Hola, esta es una descripcion de algo, no se, ni idea"
+        title: "Áreas",
+        content: "",
+        links: [{
+            url: "/folklore",
+            name: "Folklore"
+        },{
+            url: "/jazz",
+            name: "Jazz"
+        },{
+            url: "/tango",
+            name: "Tango"
+        }]
     },
     {
         image: require("/img/cards/placeholder.jpg"),
-        title: "Tarjeta 5",
-        content: "Hola, esta es una descripcion de algo, no se, ni idea"
+        title: "Material extra",
+        content: "",
+        links:[{
+            url: "/material",
+            name: "Click aquí"
+        }]
     },
     {
         image: require("/img/cards/placeholder.jpg"),
-        title: "Tarjeta 6",
-        content: "Hola, esta es una descripcion de algo, no se, ni idea"
+        title: "Grupos Telegram",
+        content: "",
+        links: [{
+            url: "https://empaentelegram.github.io/",
+            name: "Click Aquí"
+        }]
     }
-
 ]
 
 const Main = {
@@ -72,26 +87,7 @@ const Main = {
         return m(StandardPage, {hero: true},
                  m("h1.text-align-center.main", "Título de la página, supongo"),
                  m(CardContainer,
-
-                   cards.map(card => m(Card, card)))
-
-                 /*
-                   m("p"),
-                   m("p"),
-                   m("hr"),
-                   m("p"),
-                   m("p"),
-
-                   m(DownloadContainer,
-                   Material.buscar(this.query)
-                   .map(item =>
-                   m(DownloadItem, {
-                   title: item.nombre,
-                   description: item.descripcion,
-                   url: item.url
-                   })))
-                 */
-                );
+                   cards.map(card => m(Card, card))));
 
     }
 };
