@@ -10,7 +10,7 @@ const StandardPage = {
                                m("img", {src: require("/img/hero.jpg")}),
                                m("content",
                                  m("h1", "SUMA EMPA"),
-                                 m("p", "Sistema Unificado de Material para Alumnos del EMPA"))):null,
+                                 m("p", "Sistema Unificado de Material para Alumn@s de la EMPA"))):null,
             m("main",
               m("main-content",
                 vnode.children)),

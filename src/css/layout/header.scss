@@ -4,17 +4,25 @@ header{
 
 header nav{
     background: $main-color;
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    grid-template-rows: 60px;
+    display: flex;
+    height: 60px;
     logo{
         display: block;
-        height: 100%;
         margin-left: 10px;
+        flex: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+
         img{
             cursor: pointer;
-            height: 100%;
+            height: 40px;
         }
+        @media (max-width: 320px) {
+            img{
+                height: 30px;
+            }
+        }
+
     }
     title{
         margin: auto;
