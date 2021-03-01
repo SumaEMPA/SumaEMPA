@@ -34,7 +34,6 @@ var Database = {
 function setupDatabase(data){
     Database.loaded = true;
     Database.data = data || [];
-    console.log(data)
     Database.fuse = new fuse(data, fuseOptions);
     Database.loading = false;
 }
