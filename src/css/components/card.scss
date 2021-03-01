@@ -3,6 +3,7 @@ card:hover{
 }
 
 card{
+    transition: 0.3s;
     box-shadow: 3px 3px 10px 3px #ddd;
     border: 1px solid $gray-color;
     border-radius: 3px;

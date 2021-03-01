@@ -6,7 +6,7 @@ const StandardPage = {
     view(vnode){
         return m("page",[
             m(Header),
-            vnode.attrs.hero?m("hero",
+            vnode.attrs.hero?m("hero.animated",
                                m("img", {src: require("/img/hero.jpg")}),
                                m("content",
                                  m("h1", "Sistema Unificado"),

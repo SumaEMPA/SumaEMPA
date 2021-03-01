@@ -44,6 +44,12 @@ h1,h2,h3{
     text-decoration : none;
     padding : 4px;
     text-align: center;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    border-color: $main-hover-color;
+    color: $main-hover-color;
 }
 
 .main{

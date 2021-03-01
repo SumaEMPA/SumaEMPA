@@ -25,7 +25,7 @@ const DownloadItem = {
     view(vnode){
         const attr = vnode.attrs;
         console.log(attr);
-        return m("download-item",
+        return m("download-item.animated",
                  m("img", {src: getIcon(attr.icon), onclick: () => openUrl(attr.url)}),
                  m("cuerpo",
                    m("h3", {onclick: () => openUrl(attr.url)}, attr.title),
