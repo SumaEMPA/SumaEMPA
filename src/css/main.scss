@@ -3,7 +3,6 @@
 
 *{
     box-sizing: border-box;
-    font-family: sans;
 }
 
 *:before,
@@ -13,6 +12,11 @@
 
 body{
     color: $fg-color;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 @import "layout/header.scss";
