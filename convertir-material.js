@@ -2,7 +2,6 @@ const path = require('path');
 const fs = require('fs');
 const YAML = require('yaml');
 
-
 var database = [];
 
 function processDirectory(dirPath){
@@ -25,7 +24,6 @@ function processDirectory(dirPath){
 
     console.log(database);
 }
-
 
 processDirectory(path.join(__dirname, 'material'));
 fs.writeFile(path.join(__dirname, "dist", "material.json"), JSON.stringify(database), 'utf-8', ()=>console.log("ok"));
