@@ -7,7 +7,7 @@
 
 *:before,
 *:after {
- box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body{
@@ -59,3 +59,53 @@ h1,h2,h3{
 .search{
     width: 100%;
 }
+
+
+accordion{
+    display: block;
+    accordion-item{
+        display: block;
+        accordion-title{
+            font-family: 'Josefin Sans', sans-serif;
+            display: block;
+            background-color: $main-color;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 25px;
+            transition: 0.4s;
+            user-select: none;
+        }
+        accordion-title:after {
+            content: '\002B';
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        accordion-title.rolledup:after {
+            content: '\2212';
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        accordion-title:hover{
+            background-color: $main-hover-color;
+        }
+        accordion-body{
+            h1,h2,h3{
+                color: $main-color;
+            }
+            display: block;
+            padding: 0 18px;
+
+            &.hide{
+                display: none;
+            }
+        }
+
+    }
+}
+

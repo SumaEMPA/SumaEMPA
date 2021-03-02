@@ -8,11 +8,22 @@
   },
   "author": "Pipa Pips, Lucas Pandolfo",
   "license": "ISC",
+  "marked": {
+    "breaks": true,
+    "pedantic": false,
+    "gfm": true,
+    "tables": true,
+    "sanitize": false,
+    "smartLists": true,
+    "smartypants": false,
+    "xhtml": false
+  },
   "devDependencies": {
     "fuse.js": "^6.4.6",
     "mithril": "^2.0.4",
     "normalize.css": "^8.0.1",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-markdown-string": "^1.4.2",
     "sass": "^1.32.8",
     "yaml": "^1.10.0"
   }

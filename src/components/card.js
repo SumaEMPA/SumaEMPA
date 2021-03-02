@@ -7,7 +7,7 @@ const Card = {
         const content = attrs.content || "";
         const links = attrs.links || [];
 
-        return m("card.fadein",
+        return m("card",
                  m("card-image",
                    m("img", {src: attrs.image})),
                  m("card-content",
