@@ -2,9 +2,10 @@ nombre: Cuadernillo FOBA Preparatorio y Nivel I
 descripcion: Partes teórica y práctica (lecturas rítmicas y melódicas)
 fecha: 2021-03-02
 nivel:
-  - FOBA0, FOBA1
+  - FOBA0
+  - FOBA1
 instrumentos:
   - todos
-tipo: Apuntes
+tipo: Apunte
 icono: pdf
-url: https://drive.google.com/file/d/1i8QvVTfNhiGxXXeWF3GFl5EzS9161Ndr/view?usp=sharing
+url: https://drive.google.com/file/d/1i8QvVTfNhiGxXXeWF3GFl5EzS9161Ndr/view
