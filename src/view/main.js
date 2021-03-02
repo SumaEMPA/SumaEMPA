@@ -9,9 +9,8 @@ const DownloadContainer = require("/components/download-container.js");
 
 const cards = [
     {
-        image: require("/img/cards/placeholder.jpg"),
+        image: require("/img/cards/card1.jpg"),
         title: "Nivelación",
-        content: "",
         links: [{
             url: "/lm",
             name: "Lenguaje Musical"
@@ -23,18 +22,16 @@ const cards = [
 
     },
     {
-        image: require("/img/cards/placeholder.jpg"),
+        image: require("/img/cards/card2.jpg"),
         title: "Formación básica",
-        content: "",
         links: [{
             url: "/foba",
             name: "FOBA"
         }]
     },
     {
-        image: require("/img/cards/placeholder.jpg"),
+        image: require("/img/cards/card3.jpg"),
         title: "Carreras",
-        content: "",
         links: [{
             url: "/pimp",
             name: "PIMP"
@@ -47,9 +44,8 @@ const cards = [
         }]
     },
     {
-        image: require("/img/cards/placeholder.jpg"),
+        image: require("/img/cards/card4.jpg"),
         title: "Áreas",
-        content: "",
         links: [{
             url: "/folklore",
             name: "Folklore"
@@ -62,18 +58,16 @@ const cards = [
         }]
     },
     {
-        image: require("/img/cards/placeholder.jpg"),
+        image: require("/img/cards/card5.jpg"),
         title: "Material extra",
-        content: "",
         links:[{
             url: "/material",
             name: "Click Aquí"
         }]
     },
     {
-        image: require("/img/cards/placeholder.jpg"),
+        image: require("/img/cards/card6.jpg"),
         title: "Grupos Telegram",
-        content: "",
         links: [{
             url: "https://empaentelegram.github.io/",
             name: "Click Aquí",
