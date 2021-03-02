@@ -14,7 +14,7 @@
 
 
 ### Aspecto Auditivo
--Lograr una entonación fluída de las escalas mayores y menores, percibiendo el centro tonal propuesto y las frases musicales, dentro de un contexto rítmico de valores de dificultad mediana.
+- Lograr una entonación fluída de las escalas mayores y menores, percibiendo el centro tonal propuesto y las frases musicales, dentro de un contexto rítmico de valores de dificultad mediana.
 - Dictados melódico–armónicos dentro de una tonalidad (C, G, D, F) modulando a tonos vecinos, tanto mayores como menores (Am, Dm, Em, Bm).
 - Escritura de fragmentos de obras, marchas o canciones sin utilización de instrumento alguno.
 - Desarrollar la memoria auditiva a partir del conocimiento de la estructura del motivo y su desarrollo.
