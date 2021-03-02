@@ -10,31 +10,41 @@ card{
     display: grid;
     grid-template-rows: 192px 1fr;
 
-    image{
+    card-image{
         overflow:hidden;
         img{
             width: 100%;
         }
     }
-    content{
+    card-content{
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
-        h3{
-            color: $main-color;
-        }
-        p{
-            color: $gray2-color;
-        }
-        links{
-            display: flex;
-            a{
-                flex: 1;
+        display: flex;
+        flex-direction: column;
+        card-body{
+            display: block;
+            flex:1;
+            h3{
+                color: $main-color;
             }
-            a:not(:first-child) {
-                margin-left: 2px;
+            p{
+                color: $gray2-color;
             }
+        }
 
+        card-footer{
+            display: block;
+            links{
+                display: flex;
+                a{
+                    flex: 1;
+                }
+                a:not(:first-child) {
+                    margin-left: 2px;
+                }
+
+            }
         }
     }
 }
