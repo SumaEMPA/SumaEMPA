@@ -1,23 +1,36 @@
 ## Pautas De Acreditación
 ### Aspecto Rítmico
 
-- Marcación e identificación de pulso, división y acento sobre diferentes velocidades (tempos).
-- Identificación auditiva de compases binarios y ternarios ( de compases simples y compuestos)
-- Conocimiento de la escritura de la grafía tradicional de la música, en su estructura básica: Clave de sol y de fa, lectura en el endecagrama, lineas adicionales, figuras, armado de compases.
-- Identificación de tipos de comienzos.
-- Lectura de células rítmicas de base binaria en todas sus formas desde 2 negras hasta semicorcheas, así como el correcto uso de la duración de las figuras, como valores rítmicos relativos.
+-Lectura y dictado a una y dos voces ritmos en compás simple hasta semicorchea, dentro del pulso y en cualquier combinación con corchea, como así también aquellas que tengan silencios de semicorchea.
+-Lectura y dictado a una y dos voces de tresillos.
+-Lectura y dictado a una y dos voces hasta corchea en compás compuesto.
+-Interpretar distintos tipos de compases a partir de su unidad de compás, de pulso, de división y de subdivisión.
+-Utilizar la ligadura de prolongación.
 
 ### Aspecto Armónico
 
-- Reconocimiento auditivo de la función dominante y la función tónica.
-- Intervalos mayores, menores y justos: Su relación como primer eslabón de la cadena armónica, dentro de la octava.
-- Escala mayor. Preponderancia hasta el quinto grado (entonación hasta el quinto grado en la escala de do mayor). Tetracordios, tonos y semitonos. Reconocimiento auditivo de todos y cada uno de ellos. Cifrado americano.
-- Idea de tonalidad y modo.
-- Acordes tríadas surgidos de las especies de la tonalidad mayor y su cifrado correspondiente. Reconocimiento auditivo en obras sencillas
+-Dictado de acordes mayores, menores, disminuidos y aumentados.
+-Reconocer funciones en forma de módulos cadenciales simples y compuestas, plagal, auténtica y rota.
+-Construir en tríadas y tétradas cada grado de la escala mayor y cifrar (armonizar la escala).
+-Ubicación de los tipos de tríadas y tétradas en la escala mayor.
+-Interpretar cifrados.
+-Cifrar acordes.
+-Tipos de cadencias y sus sustituciones.
+-Analizar una secuencia armónica: grados y tipos de cadencias.
+-Analizar una melodía de acuerdo a su pertenecia armónica: pasos, bordaduras, anticipación y aproximación.
+-Construir en sistema pianístico, acordes y melodía.
+-Noción de inversión de acordes y cómo se cifran.
 
 ### Aspecto melódico
-- Cantar melodías sencillas (diatónicas, por grado conjunto o escalísticas) dentro de la octava y preferentemente la quinta.
-- Las alteraciones en el contexto melódico dentro y fuera de la tonalidad: Utilización correcta de cada una.
-- Identificación de melodías (diatónicas, por grado conjunto o escalísticas) en forma auditiva.
-- Construcción y ejecución de melodías propias y ajenas 
-- Identificación de recursos melódicos básicos y relaciones de similitud, diferencia, repetición y variación en la practica entonada y auditiva, en melodías sencillas tradicionales
+
+-Clave de Sol y de Fa en 4ta. en sistema pianístico (de manera conjunta), visualizar y nombrar de acuerdo al ritmo.
+-Reconocer intervalos melódicos menores, mayores y justos dentro de la octava al dictado.
+-Dictado melódico en modo mayor con extensión de 8va. el cual tenga mayoría de grados conjuntos.
+-Lectura entonada de melodías en modo mayor.
+-Calificar y clasificar cualquier tipo de intervalo simple (preferentemente) y compuesto.
+-Construir cualquier escala mayor en cualquier tonalidad.
+-Construir cualquier escala menor, en sus tipos natural, armónica y bachiana en cualquier tonalidad.
+-Maneja y discernir de acuerdo al círculo de 5tas sus diferentes tipos de tonalidades, prácticas, enarmónicas.
+-Armaduras de clave de escalas mayores
+-Conocer de manera nominal los grados de la escala y la función de la sensible tonal y modal.
+-Sistinguir y realizar semitonos diatónicos, cromáticos y enarmonías.
