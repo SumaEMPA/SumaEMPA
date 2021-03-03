@@ -61,8 +61,27 @@ h1,h2,h3{
 }
 
 
+accordion-group{
+    display:block;
+    accordion-group-header{
+        font-family: 'Josefin Sans', sans-serif;
+        display: block;
+        background-color: $gray2-color;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 32px;
+        transition: 0.4s;
+        user-select: none;
+    }
+}
+
 accordion{
     display: block;
+
     accordion-item{
         display: block;
         accordion-title{
