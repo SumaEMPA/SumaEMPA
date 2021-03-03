@@ -11,7 +11,10 @@ const Programa = {
                    "Ingreso al Nivel I",
                    m(Accordion,
                      "Pautas",
-                     m.trust(require("/programs/lm-nivel1.md")))),
+                     m.trust(require("/programs/lm-nivel1.md")),
+                     "Material",
+                     "Cosas acá"
+                    )),
                  m(".hr"),
                  m(AccordionGroup,
                    "Ingreso al Nivel II",

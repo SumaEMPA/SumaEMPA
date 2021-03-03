@@ -21,7 +21,9 @@ const Accordion = {
                            onclick: ()=> this.selected = (i==this.selected)?-1:i,
                            class: i==this.selected?"rolledup":null
                        }, title),
-                       m("accordion-body", {class: i==this.selected?"show":"hide"}, body))));
+
+                       m("accordion-body", {class: i==this.selected?"show":"hide"},
+                         m("accordion-body-container", body)))));
     }
 }
 

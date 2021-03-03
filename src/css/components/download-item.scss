@@ -1,10 +1,11 @@
 download-item:hover{
-    box-shadow: 3px 3px 10px 3px #bbb;
+    box-shadow: 3px 3px 10px 3px $shadow-hover-color;
 }
 
 download-item{
+    overflow: hidden;
     transition: 0.3s;
-    box-shadow: 3px 3px 10px 3px #ddd;
+    box-shadow: 3px 3px 10px 3px $shadow-color;
     border: 1px solid $gray-color;
     border-radius: 3px;
     display: grid;

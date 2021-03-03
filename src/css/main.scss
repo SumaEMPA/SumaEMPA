@@ -113,17 +113,30 @@ accordion{
         accordion-title:hover{
             background-color: $main-hover-color;
         }
+
+        @media (hover: none) {
+            accordion-title {
+                background-color: $gray-color;
+            }
+        }
+
         accordion-body{
+            border-right: 2px solid $gray-color;
+            border-left: 2px solid $gray-color;
             h1,h2,h3{
                 color: $main-color;
             }
-            display: block;
+            display: flex;
             padding: 0 18px;
 
             &.hide{
                 display: none;
             }
         }
+        accordion-body:last-child{
+            border-bottom: 2px solid $gray-color;
+        }
+
 
     }
 }
