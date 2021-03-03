@@ -47,7 +47,6 @@ function loadDatabase(){
      .then(setupDatabase);
 }
 
-
 Material = {
   buscar(texto){
     if(!texto)

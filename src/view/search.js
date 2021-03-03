@@ -19,12 +19,7 @@ const Search = {
                  m(DownloadContainer,
                    Material.buscar(this.query)
                            .map(item =>
-                               m(DownloadItem, {
-                                   title: item.nombre,
-                                   description: item.descripcion,
-                                   url: item.url,
-                                   icon: item.icono
-                               }))))
+                               m(DownloadItem, item))))
 
 
     }

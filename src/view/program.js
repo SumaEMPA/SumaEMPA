@@ -21,12 +21,7 @@ const Programa = {
                      m(DownloadContainer,
                        Material.buscarNivel("FOBA1")
                                .map(item =>
-                                   m(DownloadItem, {
-                                       title: item.nombre,
-                                       description: item.descripcion,
-                                       url: item.url,
-                                       icon: item.icono
-                                   })))
+                                   m(DownloadItem, item)))
                     )),
                  m(".hr"),
                  m(AccordionGroup,

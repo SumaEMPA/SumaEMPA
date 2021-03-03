@@ -26,10 +26,10 @@ const DownloadItem = {
         const attr = vnode.attrs;
 
         return m("download-item",
-                 m("img", {src: getIcon(attr.icon), onclick: () => openUrl(attr.url)}),
+                 m("img", {src: getIcon(attr.icono), onclick: () => openUrl(attr.url)}),
                  m("cuerpo",
-                   m("h3", {onclick: () => openUrl(attr.url)}, attr.title),
-                   m("p",  attr.description)));
+                   m("h3", {onclick: () => openUrl(attr.url)}, attr.nombre),
+                   m("p",  attr.descripcion)));
     }
 }
 
