@@ -132,6 +132,11 @@ accordion{
             &.hide{
                 display: none;
             }
+
+            accordion-body-container{
+                display: block;
+                width: 100%;
+            }
         }
         accordion-body:last-child{
             border-bottom: 2px solid $gray-color;

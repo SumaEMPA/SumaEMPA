@@ -3,6 +3,11 @@ const StandardPage = require("/layout/standard-page.js");
 const Accordion = require("/components/accordion.js");
 const AccordionGroup = require("/components/accordion-group.js");
 
+const DownloadItem = require("/components/download-item.js");
+const DownloadContainer = require("/components/download-container.js");
+
+const Material = require("/model/material.js");
+
 const Programa = {
     view(){
         return m(StandardPage,
@@ -13,7 +18,15 @@ const Programa = {
                      "Pautas",
                      m.trust(require("/programs/lm-nivel1.md")),
                      "Material",
-                     "Cosas acá"
+                     m(DownloadContainer,
+                       Material.buscarNivel("FOBA1")
+                               .map(item =>
+                                   m(DownloadItem, {
+                                       title: item.nombre,
+                                       description: item.descripcion,
+                                       url: item.url,
+                                       icon: item.icono
+                                   })))
                     )),
                  m(".hr"),
                  m(AccordionGroup,

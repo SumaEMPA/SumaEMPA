@@ -49,12 +49,15 @@ function loadDatabase(){
 
 
 Material = {
-    buscar(texto){
-        if(!texto)
-            return Database.data;
-        console.log(texto);
-        return Database.fuse.search(texto).map(result => result.item);
-    }
+  buscar(texto){
+    if(!texto)
+      return Database.data;
+    console.log(texto);
+    return Database.fuse.search(texto).map(result => result.item);
+  },
+  buscarNivel(nivel){
+    return Database.data.filter(item => item.nivel.includes(nivel));
+  }
 }
 
 loadDatabase();
