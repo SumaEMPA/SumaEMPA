@@ -128,3 +128,10 @@ accordion{
     }
 }
 
+.hr{
+    display: block;
+    width: 100;
+    border-top: 1px solid $gray-color;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

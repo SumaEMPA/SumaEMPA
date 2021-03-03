@@ -17,7 +17,7 @@ const Card = {
                      m("p", attrs.content)),
 
                    m("card-footer",
-                     links.length && content.length?m("hr"):null,
+                     links.length && content.length?m(".hr"):null,
                      m("links",
                        links.map(link => m("a.btn", {href: link.url, target: link.newWindow?"_blank":""}, link.name))))));
     }
