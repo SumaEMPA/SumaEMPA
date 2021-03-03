@@ -1,4 +1,3 @@
-## Pautas De Acreditación
 ### Aspecto Rítmico
 
 - Marcación e identificación de pulso, división y acento sobre diferentes velocidades (tempos).

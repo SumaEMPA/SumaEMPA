@@ -1,4 +1,3 @@
-## Pautas De Acreditación
 ### Aspecto Rítmico-métrico
 
 - Internalizar compases binarios y ternarios insertos en secuencias contenidas en las obras que forman parte de las cátedras de instrumento y poder ejecutarlas con su propio instrumento en una sola nota.

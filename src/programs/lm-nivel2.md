@@ -1,4 +1,3 @@
-## Pautas De Acreditación
 ### Aspecto Rítmico
 
 - Lectura y dictado a una y dos voces ritmos en compás simple hasta semicorchea, dentro del pulso y en cualquier combinación con corchea, como así también aquellas que tengan silencios de semicorchea.

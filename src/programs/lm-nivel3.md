@@ -1,4 +1,3 @@
-## Pautas De Acreditación
 ### Aspecto Rítmico-métrico
 
 - Profundizar la utilización de la síncopa y el contratiempo como valor musical motívico-temático generador.
@@ -7,7 +6,8 @@
 - Ejecutar corporal y vocalmente las frases musicales trabajadas respetando una gama de tempos variable (adagio, andante, moderato, allegro).
 - Transcribir el mismo nivel de dificultad adquirido en la lectura a partir de ejercicios de graduales, siempre atendiendo al fraseo propuesto por la música a fin de lograr no sólo la escritura, sino un análisis formal: frases, secciones, temas, para poder crear ideas rítmicas coherentes y de extensiones diversas (8 - 16 y 24 compases).
 - Ejecutar y transcribir ejercicios rítmicos a 2 voces superpuestas, cuyo nivel será menor o igual al adquirido en los ejercicios a una sola voz, pero a un tempo menos exigente (larghetto).
-- 
+
+
 ### Aspecto Armónico
 - Leer y escribir en dos claves.
 - Componer Trabajos Prácticos en base a pautas fijas y preestablecidas, utilizando los diferentes elementos técnicos trabajados en clase sobre frases de 8-12-16 compases (modulación a tonos vecinos, modulación por Cambio de Modo, progresión armónica, funciones tonales (Modo Mayor y Modo menor), notas de paso, bordaduras, bordaduras sucesivas, anticipaciones).
