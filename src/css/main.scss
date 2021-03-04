@@ -11,12 +11,13 @@
 }
 
 body{
-    color: $fg-color;
-    font-family: 'Roboto', sans-serif;
+    color: color(fg);
+    @extend %body-font;
 }
 
 h1,h2,h3{
-    font-family: 'Josefin Sans', sans-serif;
+    @extend %title-font;
+    color: color(main);
 }
 
 @import "layout/header.scss";
@@ -31,42 +32,39 @@ h1,h2,h3{
 @import "components/download-container.scss";
 
 
-.text-align-center{
+.center-text{
     text-align: center;
 }
 
 .btn{
     display: block;
     border-style: solid;
-    border-color: $main-color;
-    color: $main-color;
+    border-color: color(main);
+    color: color(main);
     border-width : 1px 1px 1px 1px;
     text-decoration : none;
     padding : 4px;
     text-align: center;
     transition: 0.3s;
+
+    &:hover{
+        border-color: color(highlight);
+        color: color(highlight);
+    }
 }
 
-.btn:hover{
-    border-color: $main-hover-color;
-    color: $main-hover-color;
-}
-
-.main{
-    color: $main-color;
-}
 
 .search{
     width: 100%;
 }
 
 
-accordion-group{
-    display:block;
-    accordion-group-header{
-        font-family: 'Josefin Sans', sans-serif;
+.accordion-group{
+
+    &__header{
+        @extend %title-font;
         display: block;
-        background-color: $gray2-color;
+        background-color: color(accordion-header-bg);
         cursor: pointer;
         padding: 18px;
         width: 100%;
@@ -79,67 +77,61 @@ accordion-group{
     }
 }
 
-accordion{
-    display: block;
-
-    accordion-item{
+.accordion{
+    &__title{
+        @extend %title-font;
         display: block;
-        accordion-title{
-            font-family: 'Josefin Sans', sans-serif;
-            display: block;
-            background-color: $gray-color;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 25px;
-            transition: 0.4s;
-            user-select: none;
-        }
-        accordion-title:after {
+        background-color: color(accordion-item-bg);
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 25px;
+        transition: 0.4s;
+        user-select: none;
+        &:after{
             content: '\002B';
             font-weight: bold;
             float: right;
             margin-left: 5px;
         }
-        accordion-title.rolledup:after {
+
+        &--closed:after {
             content: '\2212';
             font-weight: bold;
             float: right;
             margin-left: 5px;
         }
-        accordion-title:hover{
-            background-color: $main-hover-color;
+
+        &:hover{
+            background-color: color(accordion-item-hover);
         }
 
         @media (hover: none) {
-            accordion-title {
-                background-color: $gray-color;
-            }
+                background-color: color(accordion-item-bg);
         }
+    }
 
-        accordion-body{
-            border-right: 2px solid $gray-color;
-            border-left: 2px solid $gray-color;
-            h1,h2,h3{
-                color: $main-color;
-            }
-            display: flex;
-            padding: 0 18px;
 
-            &.hide{
-                display: none;
-            }
+    &__body-container{
+        border-right: 2px solid color(accordion-item-bg);
+        border-left: 2px solid color(accordion-item-bg);
+        display: flex;
+        padding: 0 18px;
 
-            accordion-body-container{
-                display: block;
-                width: 100%;
-            }
+        &--hide{
+            display: none;
         }
-        accordion-body:last-child{
-            border-bottom: 2px solid $gray-color;
+    }
+
+    &__body{
+        display: block;
+        width: 100%;
+
+        &last-child{
+            border-bottom: 2px solid color(accordion-item-bg);
         }
 
 
@@ -149,7 +141,7 @@ accordion{
 .hr{
     display: block;
     width: 100;
-    border-top: 1px solid $gray-color;
+    border-top: 1px solid color(main);
     margin-top: 10px;
     margin-bottom: 10px;
 }

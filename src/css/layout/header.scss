@@ -1,55 +1,49 @@
-header{
-    display: block;
-}
+.header{
 
-header nav{
-    background: $bg-color;
-    display: flex;
-    height: 60px;
-    logo{
+    &__nav{
+        background: color(header);
+        color: color(header-text);
+        display: flex;
+        height: 60px;
+    }
+
+    &__logo-container{
         display: block;
         margin-left: 10px;
         flex: 1;
         margin-top: auto;
         margin-bottom: auto;
+    }
 
-        img{
-            cursor: pointer;
-            height: 40px;
-        }
+    &__logo{
+        cursor: pointer;
+        height: 40px;
+
         @media (max-width: 320px) {
-            img{
-                height: 30px;
-            }
-        }
-
-    }
-    title{
-        margin: auto;
-        display: block;
-        font-size: 30px;
-    }
-
-    @media (max-width: 400px) {
-        title{
-            visibility: hidden;
+            height: 30px;
         }
     }
 
-    search{
+    &__search-container{
         cursor: pointer;
         margin: auto;
         display: block;
-        img{
-            height: 32px;
-        }
     }
-    hamburguer{
-        cursor: pointer;
-        margin: auto;
-        display: block;
-        margin-left: 10px;
-        margin-right: 10px;
+
+    &__search{
+        height: 32px;
+    }
+
+    &__hamburguer-container{
+            cursor: pointer;
+            margin: auto;
+            display: block;
+            margin-left: 10px;
+            margin-right: 10px;
+    }
+
+    &__hamburguer{
+        height: 32px;
     }
 
 }

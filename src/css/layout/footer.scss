@@ -1,11 +1,11 @@
 
-footer{
+.footer{
     display: flex;
-    background: $gray2-color;
-    color: $bg-color;
+    background: color(footer);
+    color: color(footer-text);
     height: 40px;
     text-align: center;
-    content{
+    &__content{
         margin: auto;
     }
 }

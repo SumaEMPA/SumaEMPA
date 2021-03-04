@@ -2,7 +2,7 @@ const m = require("mithril");
 
 const DownloadContainer = {
     view(vnode){
-        return m("download-container", vnode.children);
+        return m(".download-container", vnode.children);
     }
 }
 

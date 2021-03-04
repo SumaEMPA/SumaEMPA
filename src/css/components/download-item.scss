@@ -1,28 +1,22 @@
-download-item:hover{
-    box-shadow: 3px 3px 10px 3px $shadow-hover-color;
-}
-
-download-item{
-    overflow: hidden;
+.download-item{
+    @extend %soft-shadow;
     transition: 0.3s;
-    box-shadow: 3px 3px 10px 3px $shadow-color;
-    border: 1px solid $gray-color;
-    border-radius: 3px;
     display: grid;
     grid-template-columns: 64px 1fr;
+    background: color(download-container-bg);
 
-    img{
-        cursor: pointer;
+    cursor: pointer;
+
+    &:hover{
+        @extend %hard-shadow;
+    }
+
+    &__img{
         width: 48px;
         margin:auto;
     }
-    cuerpo{
-        h3{
-            color: $main-color;
-            cursor: pointer;
-        }
-        p{
-            color: $gray2-color;
-        }
+
+    &__text{
+        color: color(light-text);
     }
 }

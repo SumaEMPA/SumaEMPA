@@ -7,19 +7,19 @@ const Card = {
         const content = attrs.content || "";
         const links = attrs.links || [];
 
-        return m("card",
-                 m("card-image",
-                   m("img", {src: attrs.image})),
-                 m("card-content",
+        return m(".card",
+                 m(".card__img-container",
+                   m("img.card__img", {src: attrs.image})),
+                 m(".card__content",
 
-                   m("card-body",
-                     m("h3", attrs.title),
-                     m("p", attrs.content)),
+                   m(".card__body",
+                     m("h3.card__title", attrs.title),
+                     m("p.card__text", attrs.content)),
 
-                   m("card-footer",
+                   m(".card__footer",
                      links.length && content.length?m(".hr"):null,
-                     m("links",
-                       links.map(link => m("a.btn", {href: link.url, target: link.newWindow?"_blank":""}, link.name))))));
+                     m(".card__links",
+                       links.map(link => m("a.btn.card__button", {href: link.url, target: link.newWindow?"_blank":""}, link.name))))));
     }
 }
 

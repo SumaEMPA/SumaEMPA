@@ -11,7 +11,7 @@ const Material = require("/model/material.js");
 const Programa = {
     view(){
         return m(StandardPage,
-                 m("h1.text-align-center.main", "Lenguaje musical"),
+                 m("h1.center-text", "Lenguaje musical"),
                  m(AccordionGroup,
                    "Ingreso al Nivel I",
                    m(Accordion,

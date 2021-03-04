@@ -2,7 +2,7 @@ const m = require("mithril");
 
 const CardContainer = {
     view(vnode){
-        return m("card-container", vnode.children);
+        return m(".card-container", vnode.children);
     }
 }
 

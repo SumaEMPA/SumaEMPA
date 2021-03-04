@@ -1,5 +1,5 @@
 
-hero{
+.hero{
     display: grid;
     grid-template-areas: "hero";
     align-items: center;
@@ -7,21 +7,22 @@ hero{
     > * {
         grid-area: hero;
     }
-    img{
+    &__img{
         width: 100%;
     }
 
-    content{
+    &__content{
         margin-left: auto;
         font-size: 2.4vw;
-        color: $bg-color;
         text-align: right;
         margin-top: auto;
         margin-right: 20px;
         padding: 0.5rem 0.5rem 0.5rem 0;
-        h1{
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+    }
+
+    &__text{
+        color: color(hero-text);
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }

@@ -7,12 +7,12 @@ const Hero = {
         console.log("cre");
     },
     view(){
-        return m("hero.fadein",
-                 m("img", {src: require("/img/hero.jpg")}),
-                 m("content",
-                   m("h1", "Sistema Unificado"),
-                   m("h1", "de Material para"),
-                   m("h1", "Alumn@s de la EMPA")
+        return m(".hero.fadein",
+                 m("img.hero__img", {src: require("/img/hero.jpg")}),
+                 m(".hero__content",
+                   m("h1.hero__text", "Sistema Unificado"),
+                   m("h1.hero__text", "de Material para"),
+                   m("h1.hero__text", "Alumn@s de la EMPA")
                   ));
     }
 }

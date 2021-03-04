@@ -1,10 +1,61 @@
-$main-color: #FF7F2A;
-$bg-color: #FFD6AA;
-$gray-color: #D45500; 
-$gray2-color: #803300;
-$fg-color: #2B1100;
+$color-marroncito: #803300;
+$naranja-empa: #D45500;
 
-$main-hover-color: #bE2D0D;
+$gris-claro: #eee;
+$gris-oscuro: #444;
 
-$shadow-color: #0003;
-$shadow-hover-color: #0006;
+$colors: (
+    main: $color-marroncito,
+    highlight: $naranja-empa,
+
+    bg: #FFD6AA,
+
+    header: $color-marroncito,
+    header-text: white,
+
+    footer: $color-marroncito,
+    footer-text: white,
+
+    border: #602000,
+
+    card-bg: $gris-claro,
+    download-container-bg: $gris-claro,
+
+    accordion-header-bg: $color-marroncito,
+    accordion-item-bg: $naranja-empa,
+    accordion-item-hover: orange,
+
+    text: #2B1100,
+    light-text: $gris-oscuro,
+    hero-text: white,
+
+    soft-shadow: #0003,
+    hard-shadow: #0006
+);
+
+@function color($name){
+    @return map-get($colors, $name);
+}
+
+%soft-shadow{
+    box-shadow: 3px 3px 10px 3px color(soft-shadow);
+}
+
+%hard-shadow{
+    box-shadow: 3px 3px 10px 3px color(hard-shadow);
+}
+
+%title-font{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+%body-font{
+    font-family: 'Roboto', sans-serif;
+}
+
+%framed{
+    overflow: hidden;
+    border: 1px solid color(border);
+    border-radius: 3px;
+}
+

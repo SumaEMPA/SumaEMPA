@@ -2,8 +2,8 @@ const m = require("mithril");
 
 const Footer = {
     view(){
-        return m("footer",
-                 m("content", "Made with ❤ by Pipa & Lucas"));
+        return m(".footer",
+                 m(".footer__content", "Made with ❤ by Pipa & Lucas"));
     }
 };
 
