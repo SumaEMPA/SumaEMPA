@@ -21,7 +21,7 @@ const StandardPage = {
     view(vnode){
         return m("page",[
             m(Header),
-            vnode.attrs.hero?m(Hero):null,
+            //vnode.attrs.hero?m(Hero):null,
             m("main",
               m("main-content.fadein",
                 vnode.children)),

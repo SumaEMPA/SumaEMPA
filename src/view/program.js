@@ -23,19 +23,19 @@ const Programa = {
                                .map(item =>
                                    m(DownloadItem, item)))
                     )),
-                 m(".hr"),
+
                  m(AccordionGroup,
                    "Ingreso al Nivel II",
                    m(Accordion,
                      "Pautas",
                      m.trust(require("/programs/lm-nivel2.md")))),
-                 m(".hr"),
+
                  m(AccordionGroup,
                    "Ingreso al Nivel III",
                    m(Accordion,
                      "Pautas",
                      m.trust(require("/programs/lm-nivel3.md")))),
-                 m(".hr"),
+
                  m(AccordionGroup,
                    "Ingreso al Nivel Superior",
                    m(Accordion,

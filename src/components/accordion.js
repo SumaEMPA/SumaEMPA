@@ -15,15 +15,18 @@ const Accordion = {
         const children = groupByTwo(vnode.children || []);
 
         return m(".accordion",
-                 children.map(([title, body], i) =>
-                     m(".accordion__item",
-                       m(".accordion__title", {
-                           onclick: ()=> this.selected = (i==this.selected)?-1:i,
-                           class: i==this.selected?"accordion__title--closed":null
-                       }, title),
-
-                       m(".accordion__body-container", {class: i==this.selected?"accordion__body-container--show":"accordion__body-container--hide"},
-                         m(".accordion__body", body)))));
+                 children.map(([title, body], i) =>{
+                     let open = (i==this.selected);
+                     return m(".accordion__item", {onclick: () => this.selected = open?-1:i},
+                              m(".accordion__chevron", {class: open?null:"accordion__chevron--closed"},
+                                "❯"),
+                              m(".accordion__title", {
+                                  class: open?null:"accordion__title--closed"
+                              }, title),
+                              m(".accordion__body-container", {class: open?"accordion__body-container--show":"accordion__body-container--hide"},
+                                m(".accordion__body", {class: open?"accordion__body--show":"accordion__body--hide"},
+                                  body)))
+                 }));
     }
 }
 

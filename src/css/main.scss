@@ -65,48 +65,49 @@ h1,h2,h3{
         @extend %title-font;
         display: block;
         background-color: color(accordion-header-bg);
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: center;
-        outline: none;
-        font-size: 32px;
+        color: color(accordion-header-text);
+        font-size: 25px;
+        padding: 20px 0px 10px 0px;
         transition: 0.4s;
-        user-select: none;
     }
 }
 
 .accordion{
+    &__chevron{
+        cursor: pointer;
+        color: color(accordion-item-text);
+        display: inline-block;
+        width: 1em;
+        font-size: 20px;
+        line-height: 1em;
+        padding: 0;
+        margin-right: 10px;
+        margin-left: 10px;
+        transition: 0.3s;
+
+        &--closed{
+
+            transform: rotate(90deg);
+        }
+    }
+
     &__title{
         @extend %title-font;
-        display: block;
+        display: inline;
         background-color: color(accordion-item-bg);
+        color: color(accordion-item-text);
         cursor: pointer;
-        padding: 18px;
+        padding: 5px 0px 0px 0px;
         width: 100%;
         border: none;
         text-align: left;
         outline: none;
-        font-size: 25px;
+        font-size: 24px;
         transition: 0.4s;
         user-select: none;
-        &:after{
-            content: '\002B';
-            font-weight: bold;
-            float: right;
-            margin-left: 5px;
-        }
-
-        &--closed:after {
-            content: '\2212';
-            font-weight: bold;
-            float: right;
-            margin-left: 5px;
-        }
 
         &:hover{
-            background-color: color(accordion-item-hover);
+            color: color(accordion-item-hover);
         }
 
         @media (hover: none) {
@@ -116,24 +117,30 @@ h1,h2,h3{
 
 
     &__body-container{
-        border-right: 2px solid color(accordion-item-bg);
-        border-left: 2px solid color(accordion-item-bg);
         display: flex;
-        padding: 0 18px;
-
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        overflow: hidden;
         &--hide{
-            display: none;
         }
     }
 
     &__body{
+        padding: 20px;
         display: block;
         width: 100%;
+        transition: 1s;
 
-        &last-child{
-            border-bottom: 2px solid color(accordion-item-bg);
+        overflow: hidden;
+
+        &--hide{
+            display: none;
         }
 
+        &last-child{
+
+        }
 
     }
 }

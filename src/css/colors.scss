@@ -1,29 +1,41 @@
 $color-marroncito: #803300;
 $naranja-empa: #D45500;
-
+$crema-pasada: #FFD6AA;
 $gris-claro: #eee;
 $gris-oscuro: #444;
+$marron: #602000;
+
+$rosa-empa: #df3d48;
+$rosa-empa-claro: mix($rosa-empa, #fff, 10%);
+
+$fucsia-empa: #f50044;
+$fucsia-empa-claro: lighten($fucsia-empa, 48%);
+//$fucsia-empa-oscuro: darken(#f50044,20%);
+$fucsia-empa-oscuro: #9e002d;
 
 $colors: (
-    main: $color-marroncito,
+    main: $fucsia-empa,
     highlight: $naranja-empa,
 
-    bg: #FFD6AA,
+    bg: $gris-claro,
 
-    header: $color-marroncito,
+    header: $rosa-empa,
     header-text: white,
 
-    footer: $color-marroncito,
+    footer: $rosa-empa,
     footer-text: white,
 
-    border: #602000,
+    border: $rosa-empa,
 
-    card-bg: $gris-claro,
-    download-container-bg: $gris-claro,
+    card-bg: white,
+    download-container-bg: white,
 
-    accordion-header-bg: $color-marroncito,
-    accordion-item-bg: $naranja-empa,
-    accordion-item-hover: orange,
+    accordion-header-bg: none,
+    accordion-header-text: $fucsia-empa,
+    accordion-item-bg: none,
+    accordion-body-bg: $fucsia-empa-claro,
+    accordion-item-text: $fucsia-empa-oscuro,
+    accordion-item-hover: $fucsia-empa,
 
     text: #2B1100,
     light-text: $gris-oscuro,
