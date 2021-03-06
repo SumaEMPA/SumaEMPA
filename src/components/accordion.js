@@ -25,7 +25,7 @@ const Accordion = {
                               }, title),
                               m(".accordion__body-container", {class: open?"accordion__body-container--show":"accordion__body-container--hide"},
                                 m(".accordion__body", {class: open?"accordion__body--show":"accordion__body--hide"},
-                                  body)))
+                                  open?body:null)))
                  }));
     }
 }
