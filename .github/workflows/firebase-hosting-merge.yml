@@ -18,8 +18,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - run: >-
-          npm install && npx parcel build src/index.html --no-source-maps && node
-          convertir-material.js
+          npm install && mkdir dist && node convertir-material.js && npx parcel build src/index.html --no-source-maps
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
