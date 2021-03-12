@@ -8,63 +8,88 @@ const DownloadContainer = require("/components/download-container.js");
 
 const Material = require("/model/material.js");
 const Program = require("/components/program.js")
+const Programa = require("/model/programa.js");
 
-const ProgramView = {
-    view(){
-        return m(StandardPage,
-                 m("h1.center-text", "Lenguaje musical"),
-                 m(AccordionGroup,
-                   "Ingreso al Nivel I",
-                   m(Accordion,
-                     "Pautas",
-                     m(Program, {name: "lm/1"}),
-                     "Material",
-                     m(DownloadContainer,
-                       Material.buscarNivel("LM1")
-                               .map(item =>
-                                   m(DownloadItem, item)))
-                    )),
+function yearToOption(year){
+    return {name: year.nombre, value: year.codigo};
+}
 
-                 m(AccordionGroup,
-                   "Ingreso al Nivel II",
-                   m(Accordion,
-                     "Pautas",
-                     m(Program, {name: "lm/2"}),
-                     "Material",
-                     m(DownloadContainer,
-                       Material.buscarNivel("LM2")
-                               .map(item =>
-                                   m(DownloadItem, item)))
-                    )),
+function instrumentToOption(inst){
+    return {name: inst.nombre, value: inst.codigo};
+}
 
-                 m(AccordionGroup,
-                   "Ingreso al Nivel III",
-                   m(Accordion,
-                     "Pautas",
-                     m(Program, {name: "lm/3"}),
-                     "Material",
-                     m(DownloadContainer,
-                       Material.buscarNivel("LM3")
-                               .map(item =>
-                                   m(DownloadItem, item)))
-                    )),
+const Select = {
+    view(vnode){
+        const selected = vnode.attrs.selected;
+        const options = vnode.attrs.options || [];
+        const onchange = vnode.attrs.onchange || (() => {});
 
-                 m(AccordionGroup,
-                   "Ingreso al Nivel Superior",
-                   m(Accordion,
-                     "Pautas",
-                     m(Program, {name: "lm/s"}),
-                     "Material",
-                     m(DownloadContainer,
-                       Material.buscarNivel("LMS")
-                               .map(item =>
-                                   m(DownloadItem, item)))
-                    )));
-
-
-
-
+        return m("select", {onchange},
+                 options.map(option => m("option", {value: option.value}, option.name)));
     }
+}
+
+const ProgramView = function(initialVnode){
+    var selectedYear =  null;
+    var selectedInstrument= null;
+    var years = null;
+    var instruments = null;
+    var title = "";
+
+    function updateData(attrs){
+        title = attrs.title || "";
+        years = attrs.years;
+        instruments = attrs.instruments;
+
+        if(!selectedYear && years)
+            selectedYear = years[0].codigo;
+    }
+
+    function selectYear(ev){
+        selectedYear = ev.target.value;
+    }
+
+    function selectInstrument(ev){
+        selectedInstrument = ev.target.value;
+    }
+
+
+    return {
+        view(vnode){
+            updateData(vnode.attrs);
+
+            if(!years)
+                return m(StandardPage);
+
+
+            return m(StandardPage,
+                     m("h1.center-text", title),
+
+                     years && years.length>1 && m(Select, {
+                         onchange: selectYear,
+                         options: years.map(yearToOption),
+                         selected: selectedYear
+                     }),
+
+                     instruments && m(Select, {
+                         onchange: selectInstrument,
+                         options: instruments.map(instrumentToOption),
+                         selected: selectedInstrument
+                     }),
+
+                     Programa.listarMaterias(selectedYear, selectedInstrument)
+                             .map(materia => m(AccordionGroup, {key: selectedYear+selectedInstrument},
+                                              materia.nombre,
+                                              m(Accordion,
+                                                "Contenido",
+                                                m(Program, {code: materia.codigo}),
+                                                "Material",
+                                                m(DownloadContainer,
+                                                  Material.buscarNivel("lm")
+                                                          .map(item =>
+                                                              m(DownloadItem, item)))))));
+        }
+    };
 };
 
 module.exports = ProgramView;

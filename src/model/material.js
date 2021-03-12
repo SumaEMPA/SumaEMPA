@@ -51,7 +51,7 @@ Material = {
   buscar(texto){
     if(!texto)
       return Database.data;
-    console.log(texto);
+
     return Database.fuse.search(texto).map(result => result.item);
   },
   buscarNivel(nivel){

@@ -8,16 +8,16 @@ const DownloadContainer = require("/components/download-container.js");
 
 const Search = {
     query: "",
-    view(){
+    view(vnode){
         return m(StandardPage,
                  m("h1.center-text", "Búsqueda de material"),
                  m("input.search", {
                      type: "text",
-                     oninput: ev => this.query = ev.target.value,
+                     oninput: ev => vnode.state.query = ev.target.value,
                      placeholder: "Ingrese lo que desea buscar"
                  }),
                  m(DownloadContainer,
-                   Material.buscar(this.query)
+                   Material.buscar(vnode.state.query)
                            .map(item =>
                                m(DownloadItem, item))))
     }

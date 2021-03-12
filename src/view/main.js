@@ -83,7 +83,6 @@ const cards = [
 ]
 
 const Main = {
-    query: "",
     view(){
         return m(StandardPage, {hero: true},
                  m(CardContainer,

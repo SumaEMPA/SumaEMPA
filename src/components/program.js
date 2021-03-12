@@ -6,7 +6,7 @@ const Program = function(initialVnode){
     var isLoading = true;
     var loadError = false;
     var content = null;
-    var name = initialVnode.attrs.name;
+    var code = initialVnode.attrs.code;
     var promise = null;
 
     function setData(data){
@@ -20,10 +20,10 @@ const Program = function(initialVnode){
     }
 
     function loadPromise(){
-        if(promise)
+        if(promise != null)
             return;
 
-        promise = Programa.cargar(name)
+        promise = Programa.cargar(code)
                           .then(setData)
                           .catch(setError);
     }

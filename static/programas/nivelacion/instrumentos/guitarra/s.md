@@ -1,0 +1,19 @@
+### Aspecto Rítmico-métrico
+
+- Internalizar compases binarios y ternarios insertos en secuencias contenidas en las obras que forman parte de las cátedras de instrumento y poder ejecutarlas con su propio instrumento en una sola nota.
+- Escribir al dictado secuencias rítmicas en base a estructuras surgidas de obras musicales.
+- Utilizar el cuerpo como herramienta indispensable para internalizar.
+- Manejar con soltura compases aditivos (5/8, 7/8 y 8/8) y Rítmicas Combinadas ternarias (1/8, 12/8, 7/8, 11/8 y 9/8) y Rítmicas Combinadas ternarias y binarias (4/4, 9/8,3/4, 7/8 y 2/4). Lectura a primera vista de estructuras rítmicas con dificultad similar a las de las obras utilizadas en la materia de Instrumento III.
+
+### Aspecto Melódico-armónico
+
+- Entonación de melodías que surjan de obras que se trabajen en la materia Instrumento III.
+- Desarrollo del Oído Interno. Escribir en clase y sin ayuda de su instrumento: Fragmentos melódicos que el alumno ya conozca (Himno Nacional, Aurora, etc.) y Fragmentos desconocidos a partir del dictado. Ambos aspectos serán puestos en conocimiento del alumno con la armonía subyacente correspondiente.
+- Reconocimiento de secuencias armónicas (Im – ImMaj7 –Im7 – Im6) (I – I maj7 – I 7 – IV) (IV – bVII – V – I) (Im – VII – VI – V7) entre otras.
+- Reconocimiento de los acordes tétradas por grado: priner grado Modo Mayor, modo menor: antigua, armónico melódica. Lo propio con todos los grados de las respectivas escalas.
+- Utilización del diapasón: Entonación de secuencias armónicas en forma de arpegio enlazadas en diferentes tonalidades en base a distintos patterns a partir de una nota dada.
+- Funciones Tonales en Modo menor y en Modos paralelos.
+- Realizar un primer Trabajo Práctico en clave de Sol y Fa (para piano) forma ABA de 8 compases cada sección, a partir de la elaboración de un motivo de dos compases en 4/4 (sección A), modulando a un tono relativo menor (sección B) retornando al tema A donde concluirá. Tendrá en cuenta la relación melodía armonía, inversiones que tengan sentido musical, cuyos bajos respondan a secuencias melódicas coherentes. Utilizar el II menor relativo y el Dominante Secundario en el transcurso de la progresión o reemplazando a la cadencia suspensiva. Utilizar un ritmo armónico diferente para cada Sección (A-B). Una vez realizado, grabarlo siendo interpretado por el alumno con el instrumento que estudia en la Escuela. (Trabajo en base al análisis de "Adios Nonino" de Piazzolla).
+- Realizar un segundo trabajo práctico partir de una estructura de Blues, similar a la que el alumno trabaja en Instrumento, con las mismas pautas del TP 1 en cuanto a la elaboración del motivo, excepto el rítmo armónico y la armonía subyacente que ya están establecidas. Escribirla en compás de 12/8. Forma AABA. Utilizar II menor relativo, Dominante Secundario y Acorde Disminuído con 7ª Disminuída (de paso).
+- Realizar un tercer Trabajo Práctico (Rondó), forma ABACA, de 8 compases cada sección, motivos de uno y dos compases. El Plan tonal será a elección del alumno así como también el ritmo armónico de cada sección. Una de las secciones se realizará en 7/8. Utilizar Cambio de Modo. Deberá construir un Puente o Episodio (Progresión modulante utilizando enlace de Dominantes, Acordes Disminuídos, u otro recurso que sirva) Finalizar el trabajo con una Coda. Como en todos los casos, se llevará a cabo para piano. Para su grabación, el alumno deberá ejecutarlo con su propio instrumento, teniendo en cuenta justeza en la interpretación y calidad de la grabación, entre otros. Recursos nuevos a utilizar: sustitución tritonal del V7 de la escala del momento o del V7 de algún dominante secundario, acorde bVII (secuencias trabajadas en clase), intercambio modal, (Trabajo realizado en base al análisis del Preludio Nº 1 en C de J.S.Bach).
+ 
