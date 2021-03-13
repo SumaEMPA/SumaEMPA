@@ -11,7 +11,7 @@ const cards = [
     {
         image: require("/img/cards/card1.jpg"),
         title: "Nivelación",
-        content: "El primer paso al mundo EMPA. Conocé todo acerca de los cursos de nivelación y accedé a la información que sí o sí tenes que saber.",
+        content: "El primer paso al mundo EMPA. Conocé todo acerca de los requisitos de nivelación para tu instrumento favorito.",
         links: [{
             url: "/lm",
             name: "Lenguaje Musical"
@@ -25,7 +25,7 @@ const cards = [
     {
         image: require("/img/cards/card2.jpg"),
         title: "Formación básica",
-        content: "¿Te crees que sos muy canchero por pasar la Nivelación? Esto recién empieza, la Formación Básica es donde la música realmente comienza.",
+        content: "Contiene los programas para todas las materias correspondientes a la Formación Básica.",
         links: [{
             url: "/foba",
             name: "FOBA"
@@ -34,7 +34,7 @@ const cards = [
     {
         image: require("/img/cards/card3.jpg"),
         title: "Carreras",
-        content: "Algo de PIMP, PEM e IMP. No tengo idea de que significan pero suena groso.",
+        content: "¿Profesorado? ¿Tecnicatura? ¿Aún no decidis? Encontrá mas información en esta sección.",
         links: [{
             url: "/pimp",
             name: "PIMP"
@@ -49,7 +49,7 @@ const cards = [
     {
         image: require("/img/cards/card4.jpg"),
         title: "Áreas",
-        content: "No tengo idea :P",
+        content: "Folklore, Tango o Jazz. Si querés acceder a los programas de tus materias según tun instrumento, accede aquí.",
         links: [{
             url: "/folklore",
             name: "Folklore"
@@ -64,7 +64,7 @@ const cards = [
     {
         image: require("/img/cards/card5.jpg"),
         title: "Material extra",
-        content: "Buscá entre todo el material disponible para ayudarte en tus estudios.",
+        content: "Apuntes, partituras, audios, videos, libros y hasta programas de computadora. Encontrá todo lo que necesitas para tu carrera aquí.",
         links:[{
             url: "/material",
             name: "Click Aquí"
