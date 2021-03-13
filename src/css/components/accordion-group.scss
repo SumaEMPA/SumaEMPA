@@ -1,0 +1,12 @@
+.accordion-group{
+
+    &__header{
+        @extend %title-font;
+        display: block;
+        background-color: color(accordion-header-bg);
+        color: color(accordion-header-text);
+        font-size: 25px;
+        padding: 20px 0px 10px 0px;
+        transition: 0.4s;
+    }
+}

@@ -31,6 +31,8 @@ h1,h2,h3{
 @import "components/download-item.scss";
 @import "components/download-container.scss";
 
+@import "components/accordion.scss";
+@import "components/accordion-group.scss";
 
 .center-text{
     text-align: center;
@@ -56,93 +58,6 @@ h1,h2,h3{
 
 .search{
     width: 100%;
-}
-
-
-.accordion-group{
-
-    &__header{
-        @extend %title-font;
-        display: block;
-        background-color: color(accordion-header-bg);
-        color: color(accordion-header-text);
-        font-size: 25px;
-        padding: 20px 0px 10px 0px;
-        transition: 0.4s;
-    }
-}
-
-.accordion{
-    &__chevron{
-        cursor: pointer;
-        color: color(accordion-item-text);
-        display: inline-block;
-        width: 1em;
-        font-size: 20px;
-        line-height: 1em;
-        padding: 0;
-        margin-right: 10px;
-        margin-left: 10px;
-        transition: 0.3s;
-
-        &--closed{
-
-            transform: rotate(90deg);
-        }
-    }
-
-    &__title{
-        @extend %title-font;
-        display: inline;
-        background-color: color(accordion-item-bg);
-        color: color(accordion-item-text);
-        cursor: pointer;
-        padding: 5px 0px 0px 0px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 24px;
-        transition: 0.4s;
-        user-select: none;
-
-        &:hover{
-            color: color(accordion-item-hover);
-        }
-
-        @media (hover: none) {
-                background-color: color(accordion-item-bg);
-        }
-    }
-
-
-    &__body-container{
-        display: flex;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        overflow: hidden;
-        &--hide{
-        }
-    }
-
-    &__body{
-        padding: 20px;
-        display: block;
-        width: 100%;
-        transition: 1s;
-
-        overflow: hidden;
-
-        &--hide{
-            display: none;
-        }
-
-        &last-child{
-
-        }
-
-    }
 }
 
 .hr{
