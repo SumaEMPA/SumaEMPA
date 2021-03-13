@@ -112,7 +112,8 @@ const Programa = {
     const materias = Materias[año] || [];
     if(!instrumento)
       return materias.filter(materia => materia.instrumentos.length == 0);
-    return materias.filter(materia => materia.instrumentos.includes(instrumento) || materia.instrumentos.length==0);
+    return materias.filter(materia => materia.instrumentos.includes(instrumento) || materia.instrumentos.length==0)
+                   .sort((m1, m2) => m1.instrumentos.length - m2.instrumentos.length);
   },
   listarInstrumentos(filtro){
     if(!filtro) return DatosInstrumentos;
