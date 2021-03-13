@@ -152,3 +152,29 @@ h1,h2,h3{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.choice{
+    display: grid;
+    grid-row-gap: 0.5em;;
+    grid-template-columns: 1fr;
+    margin-bottom: 15px;
+    @media (max-width: 420px){
+        grid-template-columns: 1fr;
+    }
+    &__label{
+        @extend %title-font;
+        color: color(choice-label);
+        font-size: 24px;
+    }
+    &__select{
+        max-width: 200px;
+        background: color(choice-bg);
+        color: color(choice-text);
+        font-size: 20px;
+        border: 2px solid;
+        border-radius: 3px 3px 15px 3px;
+        border-color: color(choice-border);
+        outline: none;
+        overflow: hidden;
+    }
+}

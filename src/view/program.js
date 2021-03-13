@@ -24,7 +24,7 @@ const Select = {
         const options = vnode.attrs.options || [];
         const onchange = vnode.attrs.onchange || (() => {});
 
-        return m("select", {onchange},
+        return m("select", {onchange, class: vnode.attrs.class},
                  options.map(option => m("option", {value: option.value}, option.name)));
     }
 }
@@ -53,6 +53,33 @@ const ProgramView = function(initialVnode){
         selectedInstrument = ev.target.value;
     }
 
+    function yearSelector(){
+        if(!years || years.length<2)
+            return null;
+
+        return m("div.choice",
+                 m("label.choice__label", "Nivel"),
+                 m(Select, {
+                     class: "choice__select",
+                     onchange: selectYear,
+                     options: years.map(yearToOption),
+                     selected: selectedYear
+                 }));
+    }
+
+    function instrumentSelector(){
+        if(!instruments)
+            return null;
+
+        return m("div.choice",
+                 m("label.choice__label", "Instrumento"),
+                 m(Select, {
+                     class: "choice__select",
+                     onchange: selectInstrument,
+                     options: instruments.map(instrumentToOption),
+                     selected: selectedInstrument
+                 }));
+    }
 
     return {
         view(vnode){
@@ -65,31 +92,23 @@ const ProgramView = function(initialVnode){
             return m(StandardPage,
                      m("h1.center-text", title),
 
-                     years && years.length>1 && m(Select, {
-                         onchange: selectYear,
-                         options: years.map(yearToOption),
-                         selected: selectedYear
-                     }),
-
-                     instruments && m(Select, {
-                         onchange: selectInstrument,
-                         options: instruments.map(instrumentToOption),
-                         selected: selectedInstrument
-                     }),
+                     yearSelector(),
+                     instrumentSelector(),
 
                      Materias.listarMaterias(selectedYear, selectedInstrument)
-                             .map(materia => m(AccordionGroup, {key: selectedYear+selectedInstrument},
-                                              materia.nombre,
-                                              m(Accordion,
-                                                "Contenido",
-                                                m(Program, {code: materia.codigo}),
-                                                "Material",
-                                                m(DownloadContainer,
-                                                  Material.buscarNivel("lm")
-                                                          .map(item =>
-                                                              m(DownloadItem, item)))))));
-        }
-    };
+                             .map(materia => m(".fadein", {key: selectedYear+selectedInstrument},
+                                              m(AccordionGroup,
+                                                materia.nombre,
+                                                m(Accordion,
+                                                  "Contenido",
+                                                  m(Program, {code: materia.codigo}),
+                                                  "Material",
+                                                  m(DownloadContainer,
+                                                    Material.buscarNivel("lm")
+                                                            .map(item =>
+                                                                m(DownloadItem, item))))))));
+    }
+};
 };
 
 module.exports = ProgramView;
