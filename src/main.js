@@ -4,14 +4,13 @@ const Search = require("/view/search.js");
 const Program = require("/view/program.js");
 const Programa = require("/model/programa.js");
 
-
 m.route.prefix = '';
 
 m.route(document.body, "/", {
     "/": Main,
     "/lm": {
         view: () => m(Program, {
-            title: "Lenguaje Musial",
+            title: "Lenguaje Musical",
             years: Programa.listarAños("lm")
         })
     },
