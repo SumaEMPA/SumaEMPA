@@ -1,5 +1,5 @@
 const m = require("mithril");
-const Programa = require("/model/programa.js");
+const Materias = require("/model/materias.js");
 
 const Program = function(initialVnode){
 
@@ -23,7 +23,7 @@ const Program = function(initialVnode){
         if(promise != null)
             return;
 
-        promise = Programa.cargar(code)
+        promise = Materias.cargar(code)
                           .then(setData)
                           .catch(setError);
     }

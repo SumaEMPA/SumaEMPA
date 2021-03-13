@@ -1,72 +1,72 @@
 const m = require("mithril");
 const Main = require("/view/main.js");
 const Search = require("/view/search.js");
-const Program = require("/view/program.js");
-const Programa = require("/model/programa.js");
+const ProgramView = require("/view/program.js");
+const Materias = require("/model/materias.js");
 
 m.route.prefix = '';
 
 m.route(document.body, "/", {
     "/": Main,
     "/lm": {
-        view: () => m(Program, {
+        view: () => m(ProgramView, {
             title: "Lenguaje Musical",
-            years: Programa.listarAños("lm")
+            years: Materias.listarAños("lm")
         })
     },
     "/instrumentos": {
-        view: () => m(Program, {
+        view: () => m(ProgramView, {
             title: "Instrumentos",
-            years: Programa.listarAños("inst"),
-            instruments: Programa.listarInstrumentos()
+            years: Materias.listarAños("inst"),
+            instruments: Materias.listarInstrumentos()
         })
     },
     "/foba": {
-        view: () => m(Program, {
+        view: () => m(ProgramView, {
             title: "Formación Básica",
-            years: Programa.listarAños("foba"),
-            instruments: Programa.listarInstrumentos()
+            years: Materias.listarAños("foba"),
+            instruments: Materias.listarInstrumentos()
         })
     },
     "/pem": {
-        view: () => m(Program, {
+        view: () => m(ProgramView, {
             title: "Profesorado en Música",
-            years: Programa.listarAños("pem"),
+            years: Materias.listarAños("pem"),
         })
     },
     "/imp": {
-        view: () => m(Program, {
+        view: () => m(ProgramView, {
             title: "IMP",
-            years: Programa.listarAños("imp"),
-            instruments: Programa.listarInstrumentos()
+            years: Materias.listarAños("imp"),
+            instruments: Materias.listarInstrumentos()
         })
     },
     "/pimp": {
-        view: () => m(Program, {
+        view: () => m(ProgramView, {
             title: "PIMP",
-            years: Programa.listarAños("pimp"),
-            instruments: Programa.listarInstrumentos()
+            years: Materias.listarAños("pimp"),
+            instruments: Materias.listarInstrumentos()
         })
     },
     "/tango": {
-        view: () => m(Program, {
+        view: () => m(ProgramView, {
             title: "Area Tango",
-            years: Programa.listarAños("tango"),
-            instruments: Programa.listarInstrumentos("tango")
+            years: Materias.listarAños("tango"),
+            instruments: Materias.listarInstrumentos("tango")
         })
     },
     "/jazz": {
-        view: () => m(Program, {
+        view: () => m(ProgramView, {
             title: "Area Jazz",
-            years: Programa.listarAños("jazz"),
-            instruments: Programa.listarInstrumentos("jazz")
+            years: Materias.listarAños("jazz"),
+            instruments: Materias.listarInstrumentos("jazz")
         })
     },
     "/folklore": {
-        view: () => m(Program, {
+        view: () => m(ProgramView, {
             title: "Area Folklore",
-            years: Programa.listarAños("folklore"),
-            instruments: Programa.listarInstrumentos("folklore")
+            years: Materias.listarAños("folklore"),
+            instruments: Materias.listarInstrumentos("folklore")
         })
     },
 

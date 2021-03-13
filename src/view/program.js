@@ -8,7 +8,7 @@ const DownloadContainer = require("/components/download-container.js");
 
 const Material = require("/model/material.js");
 const Program = require("/components/program.js")
-const Programa = require("/model/programa.js");
+const Materias = require("/model/materias.js");
 
 function yearToOption(year){
     return {name: year.nombre, value: year.codigo};
@@ -77,7 +77,7 @@ const ProgramView = function(initialVnode){
                          selected: selectedInstrument
                      }),
 
-                     Programa.listarMaterias(selectedYear, selectedInstrument)
+                     Materias.listarMaterias(selectedYear, selectedInstrument)
                              .map(materia => m(AccordionGroup, {key: selectedYear+selectedInstrument},
                                               materia.nombre,
                                               m(Accordion,
