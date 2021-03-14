@@ -7,5 +7,9 @@
     text-align: center;
     &__content{
         margin: auto;
+        a{
+            text-decoration: none;
+            color: color(footer-text);
+        }
     }
 }
