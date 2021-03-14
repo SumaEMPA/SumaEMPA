@@ -20,6 +20,16 @@ function processMaterialFile(path){
     try{
         const yaml = fs.readFileSync(path, 'utf8')
         const parsed = YAML.parse(yaml)
+
+        parsed.instrumentos = parsed.instrumentos || [];
+        parsed.materias = parsed.materias || [];
+        parsed.nombre = parsed.nombre || "Archivo sin nombre";
+        parsed.descripcion = parsed.descripcion || "Archivo sin descripción";
+        parsed.url = parsed.url || "http://link-erroneo";
+
+        parsed.materias = parsed.materias.map(m => m.toLowerCase());
+        parsed.instrumentos = parsed.instrumentos.map(i => i.toLowerCase());
+
         Database.push(parsed);
     }
     catch(e){
