@@ -1,8 +1,8 @@
 nombre: Pipa tocando el piano
 descripcion: Y qué bien que toca :D
 fecha: 2021-02-25
-nivel:
-  - FOBA2
+materias:
+  - pem1/produccion
 instrumentos:
   - piano
 tipo: video

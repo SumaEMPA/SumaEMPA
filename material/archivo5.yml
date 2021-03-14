@@ -1,10 +1,8 @@
 nombre: Ritmo 1
 descripcion: Un ritmo de cositas para tocas cosas
 fecha: 2021-02-25
-nivel:
-  - todos
-instrumentos:
-  - todos
+materias: []
+instrumentos: []
 tipo: audio
 icono: audio
 url: https://www.google.com/?q=audio

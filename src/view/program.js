@@ -104,7 +104,7 @@ const ProgramView = function(initialVnode){
                                                   m(Program, {code: materia.codigo}),
                                                   "Material",
                                                   m(DownloadContainer,
-                                                    Material.buscarNivel("lm")
+                                                    Material.buscarMateria(materia.codigo)
                                                             .map(item =>
                                                                 m(DownloadItem, item))))))));
     }

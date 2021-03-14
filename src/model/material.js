@@ -75,8 +75,8 @@ Material = {
       pagina: pagina
     }
   },
-  buscarNivel(nivel){
-    return Database.data.filter(item => item.nivel.includes(nivel));
+  buscarMateria(codigo){
+    return Database.data.filter(item => item.materias.includes(codigo));
   }
 }
 

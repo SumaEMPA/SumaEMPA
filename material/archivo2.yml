@@ -1,8 +1,8 @@
 nombre: Serenito 20
 descripcion: Un postrecito medio pelo pero rico
 fecha: 2021-02-20
-nivel:
-  - FOBA1
+materias:
+  - pem1/lm
 instrumentos:
   - guitarra
 tipo: apunte
