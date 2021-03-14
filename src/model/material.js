@@ -54,6 +54,27 @@ Material = {
 
     return Database.fuse.search(texto).map(result => result.item);
   },
+  paginar(resultados, pagina, resultadosPorPagina){
+    resultadosPorPagina = resultadosPorPagina || 12;
+    const cantidad = resultados.length;
+    const paginas = Math.max(
+      Math.ceil(cantidad/resultadosPorPagina),
+      1);
+
+    pagina = pagina || 0;
+    pagina = Math.min(pagina, paginas);
+    pagina = Math.max(pagina, 1);
+
+    const primerResultado = (pagina-1)*resultadosPorPagina;
+    const ultimoResultado = primerResultado+resultadosPorPagina;
+
+    return {
+      resultados: resultados.slice(primerResultado, ultimoResultado),
+      total: resultados.length,
+      paginas: paginas,
+      pagina: pagina
+    }
+  },
   buscarNivel(nivel){
     return Database.data.filter(item => item.nivel.includes(nivel));
   }
