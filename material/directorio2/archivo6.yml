@@ -1,7 +1,8 @@
 nombre: Ritmo 3
 descripcion: Otro ritmo para bailar en familia
 fecha: 2021-02-20
-materias: jazz1/materia1
+materias:
+  - jazz1/materia1
 instrumentos: []
 tipo: audio
 icono: audio
