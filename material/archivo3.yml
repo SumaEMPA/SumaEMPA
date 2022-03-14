@@ -1,9 +1,10 @@
-nombre: Teoría de la musica de coso
-descripcion: Eso, la teoría musical del coso
-fecha: 2021-02-18
+nombre: Cuadernillo Guitarra Nivel Preparatorio
+descripcion: Primer material de trabajo
+fecha: 2022-03-14
 materias:
-  - pem1/gutarra
-instrumentos: []
+  - foba0
+instrumentos: 
+  - guitarra
 tipo: apunte
 icono: pdf
-url: https://www.google.com/?q=teoria
+url: https://drive.google.com/file/d/1umuWe_76zAHmNwV2LF2Y_XqeexS5EuFV/view
