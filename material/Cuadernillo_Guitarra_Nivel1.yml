@@ -1,0 +1,10 @@
+nombre: Cuadernillo Guitarra - Nivel I
+descripcion: Partituras y estudios para la materia de Instrumento Guitarra - Nivel I
+fecha: s/dato
+materias:
+  - foba1/instrumento
+instrumentos:
+  - guitarra
+tipo: cuadernillo
+icono: pdf
+url: https://drive.google.com/file/d/1ueoqww4TrIp2ZpQB2x1PFbCWcb2rbDKH/view
